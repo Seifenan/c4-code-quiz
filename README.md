@@ -2,15 +2,36 @@
 
 >Task / Description
 
-## Submission
+<!-- //----add @media to css for smaller screen sizes; shrink h & p tags----// -->
 
-[Github Repository Link]() 
 
-[Deployed URL Link]() 
+--- 
+# Submission
+
+[Deployed URL Link](https://seifenan.github.io/c4-code-quiz/) 
+
+[Github Repository Link](https://github.com/Seifenan/c4-code-quiz) 
+
+>I was tasked with creating a Quiz that lasts 75 seconds, and presents 5 different questions to the user. Each response would trigger either the display of the next question, or reduce time by 10 seconds, then proceed to the next question. 
+
 
 ## Completed Screenshot
 
-<img src="">
+<img src="assets\images\screenshot.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # 04 Web APIs: Code Quiz
@@ -43,7 +64,6 @@ THEN I can save my initials and score
 
 The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
 ### Review
 
