@@ -29,12 +29,12 @@ var submitBtn = document.getElementById("submit-btn");
 
 var quizQuestions = [
   { 
-    question: "Question 1 goes Here!!", 
+    question: "Question 1 goes HereQuestion 1 goes HereQuestion 1 goes Here!!", 
     answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
     correctAnswer: "Answer 1"
   },
   { 
-    question: "Question 2 goes Here!!", 
+    question: "Question 2 goes HereQuestion 2 goes HereQuestion 2 goes HereQuestion 2 goes HereQuestion 2 goes Here!!", 
     answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
     correctAnswer: "Answer 1"
   },
@@ -44,7 +44,7 @@ var quizQuestions = [
     correctAnswer: "Answer 1"
   },
   { 
-    question: "Question 4 goes Here!!", 
+    question: "Question 4 goes HereQuestion 4 goes Here!!", 
     answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
     correctAnswer: "Answer 1"
   },
@@ -65,7 +65,9 @@ submitBtn.addEventListener("click", scores);
 function startTimer() {
   currentTime = setInterval(function() {
     timeLeft--;
+
     displayTime();
+    
     checkTime();
   },1000);
 }
@@ -73,6 +75,7 @@ function startTimer() {
 function checkTime() {
   if (timeLeft <= 0) {
     timeLeft = 0;
+
     endQuiz();
   }
 }
@@ -102,7 +105,6 @@ function displayQuestion() {
   randQuestion.answers.forEach(function(answer, i) {
     var button = document.createElement("button");
     
-    button.setAttribute("class", "answer")
     button.setAttribute("value", answer)
     button.innerText = i + 1 + ": " + answer;
     button.addEventListener("click", checkAnswer);
@@ -119,19 +121,28 @@ function checkAnswer () {
       timeLeft = 0;
     }
     feedback.innerText = "Wrong!";
+    // Which is a better method for setting feedback color? Line 122 or Line 125
+    feedback.style.color ="red";
+    feedback.style.fontSize ="40px";
+    remainingTime.style.color ="red";
   } else {
     feedback.innerText = "Correct!";
+    // Which is a better method for setting feedback color? Line 122 or Line 125
+    feedback.setAttribute("style", "color: green;");
+    remainingTime.style.color ="green";
   }  
   feedback.setAttribute("class", "show");
   setTimeout(function() {
     feedback.setAttribute("class", "hide");
-  }, 1000);
-  
+  }, 1500);
+
   currentIndex++;
 
   if (currentIndex === quizQuestions.length) {
+
     endQuiz ();
   } else {
+    
     displayQuestion();
   }
 }
