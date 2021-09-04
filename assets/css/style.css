@@ -111,3 +111,57 @@ li:nth-child(odd) {
   padding: 10%;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  nav p {
+    font-size: 16px;
+  }
+  button {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  a {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  nav p {
+    font-size: 14px;
+  }
+  button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  a {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  nav p {
+    font-size: 12px;
+  }
+  button {
+    font-size: 10px;
+  }
+}

@@ -29,29 +29,29 @@ var submitBtn = document.getElementById("submit-btn");
 
 var quizQuestions = [
   { 
-    question: "Question 1 goes HereQuestion 1 goes HereQuestion 1 goes Here!!", 
-    answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-    correctAnswer: "Answer 1"
+    question: "Commonly used data types DO NOT include:", 
+    answers: ["strings", "booleans", "alerts", "numbers"],
+    correctAnswer: "alerts"
   },
   { 
-    question: "Question 2 goes HereQuestion 2 goes HereQuestion 2 goes HereQuestion 2 goes HereQuestion 2 goes Here!!", 
-    answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-    correctAnswer: "Answer 1"
+    question: "The condition in an if / else statement is enclosed within ___________.", 
+    answers: ["quotes", "curly brackets", "parentheses", "square brackets"],
+    correctAnswer: "parentheses"
   },
   { 
-    question: "Question 3 goes Here!!", 
-    answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-    correctAnswer: "Answer 1"
+    question: "Arrays in JavaScript can be used to store ___________.", 
+    answers: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+    correctAnswer: "all of the above"
   },
   { 
-    question: "Question 4 goes HereQuestion 4 goes Here!!", 
-    answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-    correctAnswer: "Answer 1"
+    question: "String values must be enclosed within ___________ when being assigned to variables.", 
+    answers: ["commas", "curly brackets", "quotes", "parentheses"],
+    correctAnswer: "quotes"
   },
   { 
-    question: "Question 5 goes Here!!", 
-    answers: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
-    correctAnswer: "Answer 1"
+    question: "A very useful tool used during development and debugging for printing content to the debugger is:", 
+    answers: ["JavaScript", "Terminal / Bash", "for loops", "console.log"],
+    correctAnswer: "console.log"
 }];
 
 //---Event Listeners---//
