@@ -1,0 +1,20 @@
+#intro,
+#quiz-questions,
+#result,
+#score-container {
+  text-align: center;
+}
+
+#score-container {
+  margin: 20%;
+}
+
+nav {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
+}

@@ -5,9 +5,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>Seif's Code Quiz</title>
 </head>
 <body>
-  <script src="./assets/js/script.js"></script>  
+  <header>
+    <nav>
+      <a href="highscores.html">View Highscores</a>
+      <p class="timer">Time: <span id="remaining-time">75 Seconds</span></p>
+    </nav>
+  </header>
+
+  <main>
+
+    <div>
+      
+      <div id="intro" class="intro">  
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!
+        </p>
+        <button id="start-btn">Start Quiz!</button>
+      </div>
+
+
+      <div id="quiz-questions" class="hide questions">
+        <h1 id="question">Question</h1>
+        <div id="options"></div>
+        <div id="feedback" class="hide feedback"></div>
+      </div>
+      
+      
+      <div id="result" class="hide results">
+        <h1>All done!</h1>
+        <p>Your final score is: <span id="player-score">0</span></p>
+        <div id="score-submit">
+          <label for="initials">Enter Initials</label>
+          <input type="text" id="initials">
+          <button id="submit-btn">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+
+  </main>
+  <script src="./assets/js/index.js"></script>  
 </body>
 </html>
